@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Mahasiswa;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class MahasiswaController extends Controller
 {
@@ -34,6 +35,7 @@ $request->validate([
 ]);
 //fungsi eloquent untuk menambah data
 Mahasiswa::create($request->all());
+
 //jika data berhasil ditambahkan, akan kembali ke halaman utama
 return redirect()->route('mahasiswa.index')
 ->with('success', 'Mahasiswa Berhasil Ditambahkan');
@@ -47,7 +49,7 @@ return view('mahasiswa.detail', compact('Mahasiswa'));
 public function edit($Nim)
 {
 //menampilkan detail data dengan menemukan berdasarkan Nim Mahasiswa untuk diedit
-$Mahasiswa = DB::table('mahasiswa')->where('nim', $nim)->first();;
+$Mahasiswa = DB::table('mahasiswa')->where('nim', $Nim)->first();;
 return view('mahasiswa.edit', compact('Mahasiswa'));
 }
 public function update(Request $request, $Nim)
@@ -68,8 +70,8 @@ return redirect()->route('mahasiswa.index')
 public function destroy( $Nim)
 {
 //fungsi eloquent untuk menghapus data
-Mahasiswa::find($Nim)->delete();
-return redirect()->route('mahasiswa.index')
--> with('success', 'Mahasiswa Berhasil Dihapus');
+    Mahasiswa::find($Nim)->delete();
+    return redirect()->route('mahasiswa.index')
+        ->with('success', 'Mahasiswa Berhasil Dihapus');
 }
-};
+}
