@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddColumnsToMahasiswa extends Migration
+class AddColumnsToMahasiswaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +14,8 @@ class AddColumnsToMahasiswa extends Migration
     public function up()
     {
         Schema::table('mahasiswa', function (Blueprint $table) {
-            $table->string('email', 50);
-            $table->string('alamat', 50);
+            $table->string('email', 100);
+            $table->string('alamat', 100);
             $table->date('tanggal_lahir')->nullable();
         });
     }
