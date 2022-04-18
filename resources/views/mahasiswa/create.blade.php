@@ -39,28 +39,21 @@
                     <input type="Jurusan" name="Jurusan" class="form-control" id="Jurusan" ariadescribedby="Jurusan">
                 </div>
                 <div class="form-group">
-                    <label for="E-mail">E-mail</label>
-                    <input type="email" name="Email" class="form-control" id="Email" ariadescribedby="Email">
+                    <label for="Email">E-mail</label>
+                    <input type="Email" name="Email" class="form-control" id="Email" ariadescribedby="Email">
                 </div>
                 <div class="form-group">
                     <label for="Alamat">Alamat</label>
-                    <input type="text" name="Alamat" class="form-control" id="Alamat" ariadescribedby="Alamat">
+                    <input type="Alamat" name="Alamat" class="form-control" id="Alamat" ariadescribedby="Alamat">
                 </div>
                 <div class="form-group">
-                    <label for="Tanggal_lahir">Tanggal Lahir</label>
-                    <input type="date" name="Tanggal_lahir" class="form-control" id="Tanggal_lahir" ariadescribedby="Tanggal_lahir">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+                    <label for="Tanggal">Tanggal Lahir</label>
+                    <input type="Tanggal" name="Tanggal_lahir" class="form-control" id="Tanggal_lahir" ariadescribedby="Tanggal_lahir">
                 </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
         </div>
-    </div>
-@endsection
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    </div>
-    </div>
+   </div>
 </div>
-@endsection
+@endsection 
