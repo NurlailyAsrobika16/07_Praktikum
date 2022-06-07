@@ -6,6 +6,8 @@ use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\PageController;
 use App\Models\Mahasiswa;
 use Illuminate\Http\Request; 
+use App\Http\Controllers\ArticleController;
+Route::resource('articles', ArticleController::class);
 
 /*
 |--------------------------------------------------------------------------
