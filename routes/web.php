@@ -8,6 +8,7 @@ use App\Models\Mahasiswa;
 use Illuminate\Http\Request; 
 use App\Http\Controllers\ArticleController;
 Route::resource('articles', ArticleController::class);
+Route::get('/article/cetak_pdf',[ArticleController::class,'cetak_pdf'])->name('cetak_pdf');
 
 /*
 |--------------------------------------------------------------------------

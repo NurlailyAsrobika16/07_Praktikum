@@ -1,5 +1,6 @@
 <?php
-
+Barryvdh\DomPDF\ServiceProvider::class,
+'PDF' => Barryvdh\DomPDF\Facade::Class,
 return [
 
     /*
