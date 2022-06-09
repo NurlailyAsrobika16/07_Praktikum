@@ -1,6 +1,5 @@
 <?php
-Barryvdh\DomPDF\ServiceProvider::class,
-'PDF' => Barryvdh\DomPDF\Facade::Class,
+
 return [
 
     /*
@@ -13,7 +12,8 @@ return [
     | any other location as required by the application or its packages.
     |
     */
-
+    Barryvdh\DomPDF\ServiceProvider::class,
+    'PDF' => Barryvdh\DomPDF\Facade::Class,
     'name' => env('APP_NAME', 'Laravel'),
 
     /*
